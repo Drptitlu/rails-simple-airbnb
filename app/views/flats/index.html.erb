@@ -1,0 +1,18 @@
+<br>
+<div class="container">
+  <p class="h1">All our flats</p>
+  <div class="ensemble">
+    <% @flats.each do |flat| %>
+      <div class="card">
+      <div class="titre">
+      <%=  flat.name%>
+      </div>
+      <%=  flat.address %>
+      <div class="icon">
+      <i class="tiny material-icons">euro_symbol</i><%=  flat.price_per_night %>
+      <i class="tiny material-icons">group</i><%= flat.number_of_guests  %>
+      </div>
+      </div>
+      <% end %>
+  </div>
+</div>
